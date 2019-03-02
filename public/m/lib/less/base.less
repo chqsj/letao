@@ -1,0 +1,92 @@
+/*主题色*/
+@main-color: #006699;
+
+/*根元素的大小*/
+html {
+    font-size: 26.6667vw;
+}
+
+/*body的字体大小*/
+body {
+    font-size: .14rem;
+}
+
+/*去掉标题默认间距*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+// 去掉图片3像素间距的问题
+img {
+    vertical-align: middle;
+}
+
+//  公共样式   头部和底部
+
+/* 头部区域的样式 */
+#header {
+    background-color: @main-color;
+    color: #fff;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    // 固定定位了默认没有100%的宽度
+    width: 100%;
+
+    .left {
+        width: .45rem;
+        line-height: .45rem;
+    }
+
+    .center {
+        flex: 1;
+
+        h4 {
+            line-height: .45rem;
+            text-align: center;
+            font-weight: normal;
+        }
+    }
+
+    .right {
+        width: .45rem;
+        line-height: .45rem;
+        text-align: center;
+    }
+}
+
+
+
+//底部区域
+#footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: @main-color;
+
+    a {
+        height: .45rem;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // 把span的行高改成1
+        span {
+            line-height: 1;
+        }
+
+        &.active {
+            color: orange;
+        }
+    }
+}

@@ -54,5 +54,5 @@ node_modules
 
 数据库连接.txt
 
-# 忽略自己写的demo
+# 忽略自己写的demo  当前文件夹下面的html文件
 /*.html
