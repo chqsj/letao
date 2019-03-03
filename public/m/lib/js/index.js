@@ -3,7 +3,7 @@ $(function(){
 
     // 轮播图js
     var swiper = new Swiper('.slide  .swiper-container', {
-
+        loop : true,
         centeredSlides: true,
         autoplay: {
           delay: 2200,
@@ -12,6 +12,10 @@ $(function(){
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          hide: true,
         },
       
       });
